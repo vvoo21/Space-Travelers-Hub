@@ -13,3 +13,15 @@ body {
   padding: 0 4%;
   background-color: hsl(0, 0%, 100%);
 }
+
+.rocket-details-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
