@@ -9,7 +9,7 @@ const Navigation = () => {
   const activeClassName = 'underline';
   return (
     <nav className="nav-bar">
-      <a href="#/">
+      <a className="nav-logo-link" href="#/">
         <img src={logo} alt="logo" className="nav-logo" />
         <h1 className="nav-logo-title">Space Travelers&apos; Hub</h1>
       </a>
