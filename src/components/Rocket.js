@@ -1,18 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Falcone from './images/Falcon_.jpg';
 
-function Rocket({ name, description }) {
+function Rocket({ rocket }) {
+  const name = rocket.rocket_name;
+  const { description } = rocket;
+  const flickrImages = rocket.flickr_images;
+
   return (
     <div className="rocket-container">
       <div className="rocket-details-container">
         <div className="img-container">
-          <img src={Falcone} alt="rocket-img" width={150} />
+          <img src={flickrImages} alt="rocket-img" width={150} />
         </div>
         <div className="rocket-details">
           <span className="rocket-name">{name}</span>
           <span className="rocket-description">{description}</span>
-          <button type="button">Reserve Rocket</button>
+          <button type="button" className="reserve">
+            Reserve Rocket
+          </button>
         </div>
       </div>
     </div>
@@ -22,6 +27,6 @@ function Rocket({ name, description }) {
 export default Rocket;
 
 Rocket.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  rocket: PropTypes.string.isRequired,
+  //   description: PropTypes.string.isRequired,
 };

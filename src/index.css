@@ -25,3 +25,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.reserve {
+  width: 150px;
+}

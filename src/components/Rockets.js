@@ -14,14 +14,7 @@ const Rockets = () => {
 
   return (
     <div className="rockets-container">
-      {rocketsList.map((rocket) => (
-        <Rocket
-          key={rocket.id}
-          rocket_id={rocket.rocket_id}
-          name={rocket.rocket_name}
-          description={rocket.description}
-        />
-      ))}
+      {rocketsList.map((r) => r.map((r) => <Rocket key={r.id} rocket={r} />))}
     </div>
   );
 };
