@@ -1,14 +1,14 @@
 const Mission = (mission) => {
   const { name, description } = mission;
   return (
-    <tr>
-      <td>{name}</td>
+    <tr className="border table-row-body">
+      <td className="mission-name">{name}</td>
       <td>{description}</td>
-      <td>
-        <p>NOT A MEMBER</p>
+      <td className="mission-badge">
+        <p className="badge-table">NOT A MEMBER</p>
       </td>
-      <td>
-        <button type="button">Join Mission</button>
+      <td className="border mission-button">
+        <button className="join-button" type="button">Join Mission</button>
       </td>
     </tr>
   );
