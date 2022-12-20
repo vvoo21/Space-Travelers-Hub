@@ -1,14 +1,17 @@
 import { NavLink } from 'react-router-dom';
+import logo from '../logo.png';
+import '../styles/navigation.css';
+
 const Navigation = () => {
   const activeStyle = {
     textDecoration: 'underline',
   };
   const activeClassName = 'underline';
   return (
-    <nav>
+    <nav className="nav-bar">
       <a href="#/">
-        <img src="../images/planet.png" alt="logo" />
-        <h1>Space `Travelers&apos` Hub</h1>
+        <img src={logo} alt="logo" className="nav-logo" />
+        <h1 className="nav-logo-title">Space Travelers&apos; Hub</h1>
       </a>
       <ul className="nav-links">
         <li>
@@ -23,13 +26,12 @@ const Navigation = () => {
         <li>
           <NavLink
             to="Missions"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
+            className={({ isActive }) => (isActive ? activeClassName : undefined)}
           >
             Missions
           </NavLink>
         </li>
+        <div className="vertical-divider" />
         <li>
           <NavLink to="My Profile">
             {({ isActive }) => (
