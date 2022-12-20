@@ -1,5 +1,3 @@
-const MyProfile = () => (
-  <p>Hello Zian</p>
-);
+const MyProfile = () => <p>Hello Zian</p>;
 
 export default MyProfile;
