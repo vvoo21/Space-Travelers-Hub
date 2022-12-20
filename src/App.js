@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/navigation';
-import Missions from './components/Missions';
+import Missions from './components/missions/Missions';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
 
