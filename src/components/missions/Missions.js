@@ -13,7 +13,7 @@ const Missions = () => {
   return (
     <>
       <div className="container">
-        <section className="missions-container">
+        <section>
           <table className="border">
             <thead>
               <tr className="border">

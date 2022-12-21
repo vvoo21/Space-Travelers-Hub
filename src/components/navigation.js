@@ -6,7 +6,7 @@ const Navigation = () => {
   const activeStyle = {
     textDecoration: 'underline',
   };
-  const activeClassName = 'underline';
+
   return (
     <nav className="nav-bar">
       <a className="nav-logo-link" href="#/">
@@ -26,19 +26,18 @@ const Navigation = () => {
         <li>
           <NavLink
             to="Missions"
-            className={({ isActive }) => (isActive ? activeClassName : undefined)}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             Missions
           </NavLink>
         </li>
         <div className="vertical-divider" />
         <li>
-          <NavLink to="My Profile">
-            {({ isActive }) => (
-              <span className={isActive ? activeClassName : undefined}>
-                My Profile
-              </span>
-            )}
+          <NavLink
+            to="MyProfile"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            My Profile
           </NavLink>
         </li>
       </ul>
