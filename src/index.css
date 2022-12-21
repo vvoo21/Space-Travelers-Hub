@@ -26,6 +26,30 @@ body {
   gap: 10px;
 }
 
+.rocket-description {
+  display: flex;
+  gap: 5px;
+}
+
+.badge {
+  display: none;
+  width: 100px;
+  height: 20px;
+}
+
+.show {
+  display: block;
+  background-color: aquamarine;
+}
+
 .reserve {
   width: 150px;
+  height: 20px;
+  background-color: lightgreen;
+}
+
+.cancel {
+  width: 150px;
+  height: 20px;
+  background-color: lightcoral;
 }

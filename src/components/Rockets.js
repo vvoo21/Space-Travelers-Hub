@@ -5,6 +5,7 @@ import { getRockets } from '../redux/rockets/rocketSlice';
 
 const Rockets = () => {
   const rocketsList = useSelector((state) => state.rockets);
+
   const dispatch = useDispatch();
   console.log(rocketsList);
 
@@ -14,7 +15,9 @@ const Rockets = () => {
 
   return (
     <div className="rockets-container">
-      {rocketsList.map((r) => r.map((r) => <Rocket key={r.id} rocket={r} />))}
+      {rocketsList.map((r) => (
+        <Rocket key={r.id} rocket={r} />
+      ))}
     </div>
   );
 };

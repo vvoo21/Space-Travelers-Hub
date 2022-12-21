@@ -8,14 +8,45 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   return response.data;
 });
 
+// export const reserveRocket = createAsyncThunk(
+//   'rockets/reserveRocket',
+//   async (rocket) => {
+//     await axios.post('https://api.spacexdata.com/v3/rockets', rocket);
+//   },
+// );
+
 const rocketSlice = createSlice({
   name: 'rockets',
   initialState,
+
+  reducers: {
+    reserveRocket: (state, action) => {
+      console.log(action.payload);
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: !rocket.reserved };
+      });
+      return newState;
+    },
+  },
+
   extraReducers: (builder) => {
     builder.addCase(getRockets.fulfilled, (state, action) => {
-      state.push(action.payload);
+      const arr = action.payload.map((rocket) => ({
+        id: rocket.id,
+        rocket_name: rocket.rocket_name,
+        reserved: false,
+        description: rocket.description,
+        flickr_images: rocket.flickr_images,
+      }));
+
+      state.push(...arr);
     });
   },
 });
+
+export const { reserveRocket } = rocketSlice.actions;
 
 export default rocketSlice.reducer;
