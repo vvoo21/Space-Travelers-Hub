@@ -42,18 +42,29 @@ section {
 }
 
 .show {
-  display: block;
-  background-color: aquamarine;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(243, 173, 11);
 }
 
 .reserve {
-  width: 150px;
-  height: 20px;
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 8px;
   background-color: lightgreen;
 }
 
 .cancel {
-  width: 150px;
-  height: 20px;
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: 1px solid red;
+  border-radius: 8px;
   background-color: lightcoral;
 }
