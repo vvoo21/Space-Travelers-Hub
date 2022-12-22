@@ -8,13 +8,6 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   return response.data;
 });
 
-// export const reserveRocket = createAsyncThunk(
-//   'rockets/reserveRocket',
-//   async (rocket) => {
-//     await axios.post('https://api.spacexdata.com/v3/rockets', rocket);
-//   },
-// );
-
 const rocketSlice = createSlice({
   name: 'rockets',
   initialState,

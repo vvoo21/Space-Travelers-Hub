@@ -9,10 +9,8 @@ function Rocket({ rocket }) {
   const name = rocket.rocket_name;
   const { description } = rocket;
   const flickrImages = rocket.flickr_images;
-  //   console.log(rocket);
 
   const reserveRocketHandler = () => {
-    // console.log(reserveRocket);
     dispatch(reserveRocket(id));
   };
 

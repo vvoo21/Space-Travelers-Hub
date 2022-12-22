@@ -5,11 +5,12 @@ import Missions from './components/missions/Missions';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
 import fetchMissions from './redux/missions/api';
+import { getRockets } from './redux/rockets/rocketSlice';
 
 function App() {
   const dispatch = useDispatch();
   dispatch(fetchMissions());
-
+  dispatch(getRockets());
   return (
     <Router>
       <Navigation />
