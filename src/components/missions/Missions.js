@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { joinMission } from '../../redux/missions/missions';
+import fetchMissions from '../../redux/missions/api';
 import '../../styles/missions.css';
 
 const Missions = () => {
   const state = useSelector((state) => state.missions);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (state.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, state]);
 
   const handleJoin = (id) => {
     dispatch(joinMission(id));
