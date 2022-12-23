@@ -13,6 +13,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -21,6 +22,7 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -38,6 +40,14 @@ This project is as a team and We worked with the real live data from the SpaceX 
 - Linters Check: Local and Pull Request check for errors, bugs and stylistic errors in code.
 - Gitflow
 - Unit tests
+
+### Key Features <a name="key-features"></a>
+
+- **Displaying list of available Rockets**
+- **Displaying list of available Missions**
+- **Displaying list of Reserved Missions and Rockets**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -83,6 +93,14 @@ To get a local copy up and running, follow these steps.
 - GitHub: [@Zia123456](https://github.com/Zia123456)
 - Twitter: [@zia_bakhteyari](https://twitter.com/Zia_Bakhteyari)
 - LinkedIn: [ ZiaBakhteyari](https://www.linkedin.com/in/zia-bakhteyari-8b8a861a5/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Redux Toolkit**
+- [ ] **Jest testing**
+- [ ] **React Router**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
