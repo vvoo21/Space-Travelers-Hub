@@ -51,7 +51,7 @@ This project is as a team and We worked with the real live data from the SpaceX 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://tiny-dolphin-850110.netlify.app/)
+- [Live Demo Link](https://exquisite-flan-e43e3a.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
